@@ -7,29 +7,20 @@ const { Category, Product, ProductTag, Tag } = require('../../models');
 router.get('/', async (req, res) => {
   // find all categories
   // // storing the categoryData in a variable once the promise is resolved
-  const categoryData = await Category.findAll().catch((err) => {
-    res.json(categoryData);
+  const categoryInfo = await Category.findAll({
+    include: [{ model: Product }],
   });
-
+  return res.json(categoryInfo);
   // be sure to include its associated Products
-  // try {
-  //   const categoryInfo = await Category.findAll({
-  //     include: [{ model: Product }, { model: ProductTag }, { model: Tag }],
-  //   });
-  //   res.status(200).json(categoryInfo);
-  // } catch (err) {
-  //   res.status(500).json(err);
-  // }
 });
 
 // // http://localhost:PORT/
 router.get('/:id', async (req, res) => {
   // find one category by its `id` value
-  const categoryId = await Category.findByPk().catch((err) => {
-    res.json(err);
+  const catData = await Category.findByPk(req.params.id, {
+    include: [{ model: Product }],
   });
-  res.json(categoryId);
-
+  return res.json(catData)
   // be sure to include its associated Products
 });
 
