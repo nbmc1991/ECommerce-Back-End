@@ -7,10 +7,6 @@ Internet retail, also known as e-commerce, is the largest sector of the electron
 
   ![License](https://img.shields.io/badge/License-MIT license%202.0-blue.svg)
 
-  [![Alt text for your video]()]()
-
-  <img src="images/Screenshot2020-12-18014522.png">
-
 
 ## Table of Contents:
 
@@ -41,6 +37,9 @@ To install dependencies run:
 npm i 
 
 ## Usage 
+
+[![CLICK HERE TO WATCH DEMO](https://github.com/nbmc1991/ECommerce-Back-End/blob/main/images/Screenshot%202020-12-18%20014522.png)](https://youtu.be/YhSa8vlgaTg)
+
 
 AS A manager at an internet retail company
 I WANT a back end for my e-commerce website that uses the latest technologies
