@@ -9,7 +9,7 @@ Internet retail, also known as e-commerce, is the largest sector of the electron
 
   [![Alt text for your video]()]()
 
-  ![]()
+  <img src="images/Screenshot2020-12-18014522.png">
 
 
 ## Table of Contents:
